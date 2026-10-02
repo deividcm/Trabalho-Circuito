@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://b7or57g1pbut6"]
+
+[ext_resource type="Script" uid="uid://unpdn470go4q" path="res://Scripts/resistor.gd" id="1_q7pey"]
+[ext_resource type="PackedScene" uid="uid://bm0mjhbsnmixi" path="res://Scenes/conexao.tscn" id="2_5m6kp"]
+
+[node name="Resistor" type="Node2D" unique_id=367101248 node_paths=PackedStringArray("conexoes")]
+script = ExtResource("1_q7pey")
+conexoes = [NodePath("Ponto"), NodePath("Ponto2")]
+
+[node name="Ponto" parent="." unique_id=503979522 instance=ExtResource("2_5m6kp")]
+position = Vector2(-24, 0)
+
+[node name="Ponto2" parent="." unique_id=1368284660 instance=ExtResource("2_5m6kp")]
+position = Vector2(24, 0)
