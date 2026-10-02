@@ -1,8 +1,0 @@
-[gd_scene format=3 uid="uid://bm0mjhbsnmixi"]
-
-[ext_resource type="Texture2D" uid="uid://boy4c10r7u5oa" path="res://Assets/ponto.png" id="1_lbwxh"]
-[ext_resource type="Script" uid="uid://thcdvxevuop0" path="res://conexao.gd" id="2_x0mmh"]
-
-[node name="Ponto" type="Sprite2D" unique_id=503979522]
-texture = ExtResource("1_lbwxh")
-script = ExtResource("2_x0mmh")

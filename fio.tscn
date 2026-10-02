@@ -1,6 +1,0 @@
-[gd_scene format=3 uid="uid://by6qdn5w8j2w2"]
-
-[ext_resource type="Script" uid="uid://dml7onhs553f7" path="res://fio.gd" id="1_y5j63"]
-
-[node name="Fio" type="Line2D" unique_id=973237307]
-script = ExtResource("1_y5j63")
