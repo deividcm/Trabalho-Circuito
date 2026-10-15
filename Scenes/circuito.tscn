@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://u8u08snvgx36"]
+
+[ext_resource type="Script" uid="uid://vo57kkrbesil" path="res://Scripts/circuito.gd" id="1_wykry"]
+[ext_resource type="PackedScene" uid="uid://b7or57g1pbut6" path="res://Scenes/resistor.tscn" id="2_kjl6s"]
+
+[node name="Circuito" type="Node2D" unique_id=1361554903]
+script = ExtResource("1_wykry")
+
+[node name="Resistor" parent="." unique_id=367101248 instance=ExtResource("2_kjl6s")]
+position = Vector2(768, 256)
+
+[node name="Resistor2" parent="." unique_id=498885825 instance=ExtResource("2_kjl6s")]
+position = Vector2(320, 256)

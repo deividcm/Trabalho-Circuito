@@ -3,6 +3,16 @@
 [ext_resource type="Texture2D" uid="uid://boy4c10r7u5oa" path="res://Assets/ponto.png" id="1_li0ny"]
 [ext_resource type="Script" uid="uid://thcdvxevuop0" path="res://Scripts/conexao.gd" id="2_q458d"]
 
-[node name="Ponto" type="Sprite2D" unique_id=503979522]
-texture = ExtResource("1_li0ny")
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7vl7c"]
+size = Vector2(16, 16)
+
+[node name="Area2D" type="Area2D" unique_id=2078650483]
 script = ExtResource("2_q458d")
+
+[node name="Ponto" type="Sprite2D" parent="." unique_id=503979522]
+texture = ExtResource("1_li0ny")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1421889791]
+shape = SubResource("RectangleShape2D_7vl7c")
+
+[connection signal="input_event" from="." to="." method="_on_input_event"]
